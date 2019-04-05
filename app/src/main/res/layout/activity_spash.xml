@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_spash"
+    android:background="@drawable/four"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash">
+
+    <TextView
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal"
+        android:text="www.fwosmartmotorways.com"
+
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView24" />
+
+    <TextView
+
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="Safe,Secure and Comfortable Journey With FWO"
+        android:background="#87ceeb"
+
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:freezesText="true"
+
+        android:id="@+id/textView23"
+android:layout_centerVertical="true"
+        android:layout_marginBottom="170dp"
+        android:layout_above="@+id/textView24" />
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:textColor="#d8d8d8"
+        android:textStyle="bold"
+        android:text="WE MAKE MOTORWAYS SMARTER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView25"
+        android:layout_marginBottom="12dp"
+        android:layout_above="@+id/textView23"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:textColor="#ffffff"
+        android:text="* Reliability of journey time and Safety"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView21"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView22" />
+
+    <TextView
+        android:textColor="#ffffff"
+        android:text="* M.TAG transactions and Low Balance Alerts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView22"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView26" />
+
+    <TextView
+        android:textColor="#ffffff"
+        android:text="* Speed Limit and Lane Merging / Voilation Alerts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView26"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView27" />
+
+
+    <TextView
+        android:textColor="#ffffff"
+        android:text="* Motorways ' Operational Status Alerts with weather warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/textView27"
+
+
+        android:id="@+id/textView33" />
+
+    <TextView
+        android:textColor="#ffffff"
+        android:text="* Multiple Recharge Options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/textView29"
+        android:layout_below="@+id/textView33"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:textColor="#ffffff"
+        android:text="* Informative and Enjoyable non-stop FM Transmission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView30"
+        android:layout_below="@+id/textView29"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:textColor="#ffffff"
+        android:text="* Info Messages Alerts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView28"
+android:visibility="gone"
+        android:layout_below="@+id/textView30"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:textColor="#ffffff"
+        android:text="* 24/7 Helpline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:id="@+id/textView21"
+        android:layout_below="@+id/textView25"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgg"
+        android:layout_above="@+id/textView25"
+        android:layout_marginBottom="109dp"
+        android:id="@+id/imageView5" />
+
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_dua"
+            android:icon="@drawable/hand"
+            android:title="Safar ki Dua" />
+        <item
+            android:id="@+id/nav_rech"
+            android:icon="@drawable/ic_local_play_black_24dp"
+            android:title="Recharge" />
+        <item
+            android:id="@+id/nav_Journey"
+            android:icon="@drawable/ic_airplanemode_active_black_24dp"
+            android:title="Journey Plan" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_verified_user_black_24dp"
+            android:title="Smart Motorways" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_perm_phone_msg_black_24dp"
+            android:title="HelpLine" />
+        <item
+            android:id="@+id/nav_fm"
+            android:icon="@drawable/ic_scanner_black_24dp"
+            android:title="FM Transmission" />
+        <item
+            android:id="@+id/nav_youtube"
+            android:icon="@drawable/ic_tv_black_24dp"
+            android:title="Our Youtube Channel" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_location_on_black_24dp"
+            android:title="Nearby Places" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_lock_black_24dp"
+            android:title="Change Password" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/ic_cancel_black_24dp"
+            android:title="Logout" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_manage"
+                android:icon="@drawable/ic_border_color_black_24dp"
+                android:title="Rate Us | Query" />
+            <item
+                android:id="@+id/nav_camera"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share Us" />
+
+        </menu>
+    </item>
+
+</menu>

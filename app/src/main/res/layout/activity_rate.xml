@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/rel"
+    android:background="#d8d8d8"
+    >
+
+    <LinearLayout
+
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top|center">
+
+        <TextView
+            android:id="@+id/txt_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"/>
+
+        <fragment
+            android:id="@+id/googleMap"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_above="@+id/latlongLocation" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/logout"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:background="@color/colorPrimary"
+        android:text="@string/change_password"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:background="#F44336"
+        android:text="@string/logout"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:text="Choose the area to send your feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+
+    <EditText
+        android:background="#ffffff"
+        android:padding="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:hint="Search"
+        android:layout_below="@+id/textView11"
+        android:layout_marginTop="14dp"
+        android:layout_toLeftOf="@+id/button5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:textColor="#fff"
+        android:background="@color/bg_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resturants"
+        android:id="@+id/button"
+        android:onClick="res"
+        android:layout_below="@+id/button5"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:textColor="#fff"
+        android:background="@color/bg_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toll Plaza"
+        android:id="@+id/button2"
+        android:onClick="ban"
+        android:layout_below="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:textColor="#fff"
+        android:background="@color/bg_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rest Areas"
+        android:id="@+id/button3"
+        android:onClick="hot"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:textColor="#fff"
+        android:background="@color/bg_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retail Stores"
+        android:id="@+id/button4"
+        android:onClick="ret"
+        android:nestedScrollingEnabled="false"
+        android:layout_alignTop="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="75dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textColor="#fff"
+        android:id="@+id/button5"
+        android:background="@color/colorAccent"
+        android:onClick="srch"
+        android:layout_alignTop="@+id/editText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

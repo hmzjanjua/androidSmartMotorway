@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/bg_login"
+    >
+
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:text="Registration Form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:padding="20dp"
+        android:layout_marginBottom="2dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rTextName"
+        android:hint="@string/hint_name"
+        />
+
+
+
+    <EditText
+        android:layout_marginBottom="2dp"
+        android:padding="20dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rTextEmail"
+        android:hint="Phone No"
+        android:maxLength="13"
+        android:inputType="number"
+        />
+
+
+
+    <EditText
+        android:layout_marginBottom="2dp"
+        android:padding="20dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rTextPassword"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        />
+
+
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:text="Choose Category :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/rTextPhone"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Traveler"
+            android:id="@+id/radioButton_travel"
+
+            android:checked="false"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passenger"
+            android:id="@+id/radioButton2"
+            android:textColor="#000000"
+            android:checked="false"
+            android:textSize="15sp"
+            />
+    </RadioGroup>
+    <EditText
+
+        android:padding="20dp"
+        android:layout_marginBottom="2dp"
+        android:background="#fff"
+        android:visibility="visible"
+        android:maxLength="7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+
+        android:hint="Vehicle Registration No"
+
+        android:id="@+id/edt_cell" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:id="@+id/btnRegister"/>
+
+    <Button
+        android:id="@+id/btnLinkToLoginScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@null"
+        android:text="@string/btn_link_to_login"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+</LinearLayout>
